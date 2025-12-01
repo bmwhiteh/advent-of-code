@@ -1,0 +1,8 @@
+Day 1: https://adventofcode.com/2025/day/1
+
+- numbers 0-99 on a circle
+- direction is L or R (L is decreasing and R is increasing)
+- number after L or R is the number of clicks forward (add/subtract to current number)
+- Left of 0 is 99 and right of 99 is 0
+- dial starts at 50
+- password is the number of times the dial ends up at 0 throughout the sequence of turns (passing 0 does not count)
