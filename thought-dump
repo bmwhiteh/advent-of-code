@@ -6,3 +6,25 @@ Day 1: https://adventofcode.com/2025/day/1
 - Left of 0 is 99 and right of 99 is 0
 - dial starts at 50
 - password is the number of times the dial ends up at 0 throughout the sequence of turns (passing 0 does not count)
+
+// read the file -> gives movements = ["R48", "L42", ...] 
+string FileName = day-1-puzzle-input.txt
+int currentPosition = 50
+int password = 0;
+while hasNextLine(fileName)
+  string line = fileName.getLine()
+  string direction = left(line, 1);
+  int clicks = susbtring(line, 1, line.length).ToInt()
+  if (direction == "R")
+    currentPosition += clicks
+  else if (direction == "L")
+    currentPosition -= clicks
+  
+  if(currentPosition == 0)
+    password++
+end while
+print password
+
+
+  
+
